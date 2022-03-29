@@ -6,25 +6,40 @@
 }
 
 .top {
-    border: 3px solid black;
+    /*border: 3px solid black;*/
     background-color: #1F2937;
     color: white;
 }
 
 #header {
-    border: 2px solid white;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 25%;
+    padding: 25px 25%;
+
+    flex: auto;
+    position: fixed;
+    background-color: rgba(30, 40, 55, 0.9);
+    height: 3rem;
+    width: 100%;
+    top: 0rem;
+    left: 0rem;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    padding: 0.5rem;
 }
 
 nav ul {
@@ -42,24 +57,25 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 65px 25%;
-    border: 2px solid white;
+    padding: 50px 25%;
+    padding-top: 9rem;
+    /*border: 2px solid white;*/
 }
 
 .heroLeft {
-    border: 2px solid white;
-    width: 475px;
+    /*border: 2px solid white;*/
+    width: 525px;
     height: auto;
 }
 
 .heroLeft h2{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     color: #F9FAF8;
 }
 
 .heroLeft p {
-    font-size: 18px;
+    font-size: 16px;
     color: #E5E7EB;
 
     padding-top: 0.75rem;
@@ -88,7 +104,8 @@ nav ul {
 }
 
 .heroRight {
-    border: 2px solid white;
+    /*border: 2px solid white;*/
+    display: flex;
     text-align: center;
     width: 500px;
     height: 200px;
@@ -100,13 +117,20 @@ nav ul {
     margin: 90px 0 0 0;
 }
 
+.heroRight img {
+    display: flex;
+    width: 100%; /*This sizes the image to fit the container*/
+    padding: .3rem;
+    border-radius: 7px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 25%;
 
-    border: 3px solid black;
+    /*border: 3px solid black;*/
 }
 
 .main h2 {
@@ -120,7 +144,7 @@ nav ul {
     justify-content: center;
     align-items: center;
 
-    border: 3px solid black;
+    /*border: 3px solid black;*/
 }
 
 .item1, .item2, .item3, .item4 {
@@ -130,17 +154,101 @@ nav ul {
 }
 
 .square1, .square2, .square3, .square4 {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     border-radius: 7px;
     width: 150px;
     height: 150px;
-    margin: 30px;
+    margin: 35px;
+}
+
+.square1 {
+    background-color: #1E3F66;
+}
+
+.square2 {
+    background-color: #2E5984;
+}
+
+.square3 {
+    background-color: #528AAE;
+}
+
+.square4 {
+    background-color: #73A5C6;
 }
 
 .item1 p, .item2 p, .item3 p, .item4 p {
     font-size: 16px;
     color: #1F2937;
+    padding-inline: 1px;
 }
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 75px 25%
+}
+
+.quote-section em {
+    font-size: 32px;
+    color: #1F2937;
+}
+
+.quote-section p {
+    font-size: 24px;
+    color: #1F2937;
+    align-self: flex-end;
+}
+
+.last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.sign-up-container {
+    display: flex;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 7px;
+    padding: 45px 10% 
+}
+
+.sign-up-container button {
+    padding-inline: 1.5rem;
+    padding-block: 6px;
+
+    border: 2px solid #F9FAF8;
+    border-radius: 7px;
+    color: #F9FAF8;
+    background-color: #3882F6;
+}
+
+.sign-up-container button:hover {
+    cursor: pointer;
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 2px solid #F9FAF8;
+}
+
+.left {
+    padding-right: 100px;
+    color: #F9FAF8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 25px 10% 
+}
+
+
 
 
 
