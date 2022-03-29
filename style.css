@@ -1,88 +1,146 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    background-color: #1F2937;
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20%;
-
+    border: 3px solid black;
     background-color: #1F2937;
-    border: 0.25rem solid red;
-
-    gap: 7rem;
+    color: white;
 }
 
-.header {
+#header {
+    border: 2px solid white;
+}
+
+nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    border: 0.25rem solid orange;
-    color: #E5E7EB;
-    gap: 1rem;
+    padding: 30px 25%;
 }
 
 .logo {
-    margin-right: auto;
-    width: auto;
-    height: 3rem;
-
-    /*font-size: 24px;*/
-    /*color: #F9FAF8;*/
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
-.hero {
+nav ul {
     display: flex;
-    flex-direction: row;    
-    align-items: center;
-    justify-content: space-evenly;
-
-    padding: 0 20%;
-    border: 0.25rem solid green;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.herotext {
-    border: 0.25rem solid purple;
-    width: 30rem;
-    height: auto;
-    margin: 1rem;
-}
-
-.herotext h2 {
-    font-size: 48px;
-    font-weight: 900px;
-    color: #F9FAF8;
-    margin: 0;
-}
-
-.herotext p {
-    font-size: 16px;
-    color: #E5E7EB
-}
-
-.lostarkimage {
-    border: 4px solid purple;
-    width: 21rem;
-    height: auto;
-}
-
-.signup {
+.nav_links {
+    list-style: none;
     font-size: 18px;
+    color: #E5E7EB;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 25%;
+    border: 2px solid white;
+}
+
+.heroLeft {
+    border: 2px solid white;
+    width: 475px;
+    height: auto;
+}
+
+.heroLeft h2{
+    font-size: 48px;
+    font-weight: 900;
     color: #F9FAF8;
-    font-weight: 500;
+}
 
-    padding-inline: 30px;
-    padding-block: 7px;
-    margin: 5px;
+.heroLeft p {
+    font-size: 18px;
+    color: #E5E7EB;
 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.heroLeft button {
+    padding-inline: 1.5rem;
+    padding-block: 6px;
+
+    color: #F9FAF8;
     background-color: #3882F6;
+
+    font-weight: 500;
+    font-size: 16px;
+
     border: 2px solid #3882F6;
     border-radius: 7px;
 }
+
+.heroLeft button:hover {
+    cursor: pointer;
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 2px solid #F9FAF8;
+}
+
+.heroRight {
+    border: 2px solid white;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 7px;
+}
+
+.heroRight p{
+    margin: 90px 0 0 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25%;
+
+    border: 3px solid black;
+}
+
+.main h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid black;
+}
+
+.item1, .item2, .item3, .item4 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.square1, .square2, .square3, .square4 {
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+
+.item1 p, .item2 p, .item3 p, .item4 p {
+    font-size: 16px;
+    color: #1F2937;
+}
+
 
 

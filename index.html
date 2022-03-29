@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="top">
-        <div class="header">
-            <img class="logo" src="images/LostArkIcon.jpg">
-            <a>News</a>
-            <a>Community</a>
-            <a>Support</a>
-        </div>
-        <div class="hero">   
-            <div class="herotext">
-                <h2>This website is awesome</h2>
-                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                <button class="signup">Sign up</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Top = headers and hero-->
+        <div class="top">
+            <div id="header">
+                <nav>   
+                    <p class="logo">Logo</p>
+                    <ul class="nav_links">
+                        <li>header link 1</li>
+                        <li>header link 2</li>
+                        <li>header link 3</li>
+                    </ul>
+                </nav>
             </div>
-            <div class="heroimage">
-                <img class="lostarkimage" src="images/lostark.jpg">
+            <div id="hero">
+                <div class="heroLeft">
+                    <h2>This website is awesome</h2>
+                    <p>
+                        This website has some subtext that goes here under the main title. 
+                        It's a smaller font and the color is lower contrast
+                    </p>
+                    <button>Sign up</button>
+                </div>
+                <div class="heroRight">
+                    <p>this is a placeholder for an image</p>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="contents"> 
-        <div class="sec1">
-            test    
+
+        <div class="main">
+            <h2>Some random information</h2>
+            <div class="info-container">
+                <div class="item1">
+                    <div class="square1"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="item2">
+                    <div class="square2"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="item3">
+                    <div class="square3"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="item4">
+                    <div class="square4"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
         </div>
 
-        <div class="sec2">  
-            test   
-        </div>
 
-        <div class="sec3"> 
-            test    
-        </div>
-
-        <div class="sec4">    
-            test 
-        </div>
-    </div>
-</body>
+    </body>  
 </html>
